@@ -41,8 +41,15 @@ namespace BusDepotApp.Controllers
         [HttpGet("{busid}/Maintanence")]
         public IActionResult GetBusMaintainenceInfo(int busId)
         {
-            
-            return Ok();
+            var busMaintaineceInfo = _busDepoService.CalculateTimeToMaintainence(busId);
+            return Ok(busMaintaineceInfo);
+        }
+
+        [HttpGet("{busid}/FuelConsumption")]
+        public IActionResult GetFuelConsumption(int busId)
+        {
+            var busFuelConsumptionInfo = _busDepoService.GetFuelConsumptionPercentage(busId);
+            return Ok(busFuelConsumptionInfo);
         }
 
         [HttpGet("/Incidents")]
