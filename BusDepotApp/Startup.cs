@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusDepotApp.Repository;
+using BusDepotApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,8 @@ namespace BusDepotApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IBusDepoService, BusDepoService>();
+            services.AddScoped<IBusDepoRepository,BusDepoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
