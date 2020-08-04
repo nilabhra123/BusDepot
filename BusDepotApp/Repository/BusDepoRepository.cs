@@ -18,9 +18,9 @@ namespace BusDepotApp.Repository
         };
         public BusDepoRepository()
         {
-            busList[0].CurrentLocation = new Location() { Id = 1, Latitude = 22.2, Longitude = 43.2 };
-            busList[1].CurrentLocation = new Location() { Id = 2, Latitude = 27.2, Longitude = 48.2 };
-            busList[2].CurrentLocation = new Location() { Id = 3, Latitude = 264, Longitude = 234 };
+            busList[0].CurrentLocation = new Location() { Id = 1, Latitude = 22.2, Longitude = 43.2,Time=DateTime.Now };
+            busList[1].CurrentLocation = new Location() { Id = 2, Latitude = 27.2, Longitude = 48.2, Time = DateTime.Now };
+            busList[2].CurrentLocation = new Location() { Id = 3, Latitude = 264, Longitude = 234, Time = DateTime.Now };
         }
        
 

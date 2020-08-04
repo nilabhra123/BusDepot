@@ -6,13 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="DomainServices\**" />
+    <Compile Remove="NewFolder\**" />
     <Content Remove="DomainServices\**" />
+    <Content Remove="NewFolder\**" />
     <EmbeddedResource Remove="DomainServices\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
     <None Remove="DomainServices\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <None Remove="NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>

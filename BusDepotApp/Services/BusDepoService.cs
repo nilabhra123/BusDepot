@@ -30,9 +30,17 @@ namespace BusDepotApp.Services
         public DateTime CalculateTimeToMaintainence(int busId)
         {
             var busMaintainenceInfo = _busDepoRepository.GetMaintenanceInfo(busId);
-            //Logic for Maintance Calculation 
+            //Logic for Maintainence Calculation 
 
             return DateTime.Now;// to be replaced with the final result 
+        }
+
+        public double GetFuelConsumptionPercentage(int busId)
+        {
+            var bus= _busDepoRepository.GetBus(busId);
+            var consumedPercentage= bus.CurrentFuelConsumed / bus.FuelTankCapacity*100;
+
+            return consumedPercentage;
         }
 
 
