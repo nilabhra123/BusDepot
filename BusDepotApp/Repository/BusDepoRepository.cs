@@ -48,7 +48,10 @@ namespace BusDepotApp.Repository
             return busLocation;
         }
 
-
+        public IEnumerable<Incident> GetIncidents()
+        {
+            return new List<Incident>() { new Incident() { Id = 1, AffectedBus = GetBus(1), IncidentLocation = GetBusLocation(1), IncidentTime = DateTime.Now, IncidentTitle = "Breakdown" } };
+        }
            
     }
 }

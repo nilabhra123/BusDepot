@@ -14,6 +14,7 @@ namespace BusDepotApp.Services
         Location GetBusLocation(int busId);
         MaitanenceDto CalculateTimeToMaintainence(int busId);
         double GetFuelConsumptionPercentage(int busId);
+        IEnumerable<Incident> GetIncidents();
 
     }
 }

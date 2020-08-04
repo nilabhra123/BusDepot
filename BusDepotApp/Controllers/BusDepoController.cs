@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using BusDepotApp.Services;
 using Microsoft.AspNetCore.Http;
@@ -51,5 +52,11 @@ namespace BusDepotApp.Controllers
             return Ok(busFuelConsumptionInfo);
         }
 
+        [HttpGet("/Incidents")]
+        public IActionResult GetIncidentDetails()
+        {
+            var incidents = _busDepoService.GetIncidents();
+            return Ok(incidents);
+        }
     }
 }

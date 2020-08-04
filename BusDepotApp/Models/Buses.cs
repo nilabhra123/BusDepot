@@ -17,7 +17,6 @@ namespace BusDepotApp.Models
         public DateTime LastServicedOn { get; set; }
         public double TotalKMDriven { get; set; }
         public Location CurrentLocation { get; set; }
-        public IEnumerable<Incident> Incidents { get; set; }
         public IEnumerable<Maintenance> Maintenances { get; set; }
     }
 }

@@ -51,6 +51,10 @@ namespace BusDepotApp.Services
             return consumedPercentage;
         }
 
+        public IEnumerable<Incident> GetIncidents()
+        {
+            return _busDepoRepository.GetIncidents();
+        }
 
     }
 }
