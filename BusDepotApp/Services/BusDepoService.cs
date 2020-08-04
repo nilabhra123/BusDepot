@@ -35,6 +35,10 @@ namespace BusDepotApp.Services
             return DateTime.Now;// to be replaced with the final result 
         }
 
+        public IEnumerable<Incident> GetIncidents()
+        {
+            return _busDepoRepository.GetIncidents();
+        }
 
     }
 }

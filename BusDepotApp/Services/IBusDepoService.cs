@@ -11,6 +11,7 @@ namespace BusDepotApp.Services
         Buses GetBus(int busid);
         IEnumerable<Buses> GetAllBus();
         Location GetBusLocation(int busId);
+        IEnumerable<Incident> GetIncidents();
 
     }
 }

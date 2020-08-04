@@ -15,7 +15,6 @@ namespace BusDepotApp.Models
         public double CurrentFuelConsumed { get; set; }
         public double AverageTimeInRoute { get; set; }
         public Location CurrentLocation { get; set; }
-        public IEnumerable<Incident> Incidents { get; set; }
         public IEnumerable<Maintenance> Maintenances { get; set; }
     }
 }

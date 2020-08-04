@@ -12,5 +12,6 @@ namespace BusDepotApp.Models
         public string IncidentDescription { get; set; }
         public DateTime IncidentTime { get; set; }
         public Location IncidentLocation { get; set; }
+        public Buses AffectedBus { get; set; }
     }
 }
