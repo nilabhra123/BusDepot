@@ -14,6 +14,8 @@ namespace BusDepotApp.Models
         public double FuelTankCapacity { get; set; }
         public double CurrentFuelConsumed { get; set; }
         public double AverageTimeInRoute { get; set; }
+        public DateTime LastServicedOn { get; set; }
+        public double TotalKMDriven { get; set; }
         public Location CurrentLocation { get; set; }
         public IEnumerable<Incident> Incidents { get; set; }
         public IEnumerable<Maintenance> Maintenances { get; set; }
