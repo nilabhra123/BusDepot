@@ -27,12 +27,18 @@ namespace BusDepotApp.Services
             return _busDepoRepository.GetBusLocation(busId);
         }
 
-        public DateTime CalculateTimeToMaintainence(int busId)
+        public bool CalculateTimeToMaintainence(int busId)
         {
-            var busMaintainenceInfo = _busDepoRepository.GetMaintenanceInfo(busId);
+            var bus = _busDepoRepository.GetBus(busId);
+
             //Logic for Maintainence Calculation 
 
-            return DateTime.Now;// to be replaced with the final result 
+            if (bus.TotalKMDriven - bus.Maintenances.LastOrDefault().KmCoveredInLastMaintainence > 1000 || (DateTime.Now - bus.LastServicedOn).TotalDays > 30)
+            {
+                return true;
+            }
+
+            else return false;
         }
 
         public double GetFuelConsumptionPercentage(int busId)
