@@ -1,4 +1,5 @@
-﻿using BusDepotApp.Models;
+﻿using BusDepotApp.Dto;
+using BusDepotApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace BusDepotApp.Services
         Buses GetBus(int busid);
         IEnumerable<Buses> GetAllBus();
         Location GetBusLocation(int busId);
+        MaitanenceDto CalculateTimeToMaintainence(int busId);
+        double GetFuelConsumptionPercentage(int busId);
 
     }
 }
