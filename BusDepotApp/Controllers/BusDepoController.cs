@@ -12,31 +12,35 @@ namespace BusDepotApp.Controllers
     [ApiController]
     public class BusDepoController : ControllerBase
     {
+        private readonly IBusDepoService _busDepoService;
         public BusDepoController(IBusDepoService busDepoService)
         {
-
+            _busDepoService = busDepoService;
         }
         [HttpGet]
         public IActionResult GetAllBusInfo()
         {
-
-            return Ok();
+            var busesFromRepo= _busDepoService.GetAllBus();
+            return Ok(busesFromRepo);
         }
-        [HttpGet]
+        [HttpGet("{busId}")]
         public IActionResult GetBusInfo(int busId)
         {
-
+            var busFromRepo= _busDepoService.GetBus(busId);
+            return Ok(busFromRepo);
         }
 
-        [HttpGet()]
+        [HttpGet("{busId}/Location")]
         public IActionResult GetBusLocation(int busId)
         {
-            return Ok();
+             var busLocation=_busDepoService.GetBusLocation(busId);
+            return Ok(busLocation);
         }
 
+        [HttpGet("{busid}/Maintanence")]
         public IActionResult GetBusMaintainenceInfo(int busId)
         {
-
+            
             return Ok();
         }
 
