@@ -16,5 +16,29 @@ namespace BusDepotApp.Controllers
         {
 
         }
+        [HttpGet]
+        public IActionResult GetAllBusInfo()
+        {
+
+            return Ok();
+        }
+        [HttpGet]
+        public IActionResult GetBusInfo(int busId)
+        {
+
+        }
+
+        [HttpGet()]
+        public IActionResult GetBusLocation(int busId)
+        {
+            return Ok();
+        }
+
+        public IActionResult GetBusMaintainenceInfo(int busId)
+        {
+
+            return Ok();
+        }
+
     }
 }
