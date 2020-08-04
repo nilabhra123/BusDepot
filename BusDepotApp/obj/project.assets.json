@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Honeywell Project\\BusDepotApp\\BusDepotApp.csproj",
+      "projectUniqueName": "C:\\Users\\NILABHRA\\source\\repos\\BusDepot2\\BusDepotApp\\BusDepotApp.csproj",
       "projectName": "BusDepotApp",
-      "projectPath": "D:\\Honeywell Project\\BusDepotApp\\BusDepotApp.csproj",
+      "projectPath": "C:\\Users\\NILABHRA\\source\\repos\\BusDepot2\\BusDepotApp\\BusDepotApp.csproj",
       "packagesPath": "C:\\Users\\NILABHRA\\.nuget\\packages\\",
-      "outputPath": "D:\\Honeywell Project\\BusDepotApp\\obj\\",
+      "outputPath": "C:\\Users\\NILABHRA\\source\\repos\\BusDepot2\\BusDepotApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NILABHRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
