@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/BusDepotApp/.vs/BusDepotApp
+/BusDepotApp/bin/Debug/netcoreapp3.1
+/BusDepotApp/obj/Debug/netcoreapp3.1
+/BusDepotApp/obj/Release/netcoreapp3.1
+/BusDepotApp/obj
+/BusDepotApp/BusDepotApp.csproj.user
