@@ -7,7 +7,7 @@ namespace BusDepotApp.Models
 {
     public class Incident
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string IncidentTitle { get; set; }
         public string IncidentDescription { get; set; }
         public DateTime IncidentTime { get; set; }
