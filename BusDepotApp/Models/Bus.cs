@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BusDepotApp.Models
 {
-    public class Buses
+    public class Bus
     {
         public int Id { get; set; }
         public string BusNumber { get; set; }
@@ -14,8 +14,6 @@ namespace BusDepotApp.Models
         public double FuelTankCapacity { get; set; }
         public double CurrentFuelConsumed { get; set; }
         public double AverageTimeInRoute { get; set; }
-        public DateTime LastServicedOn { get; set; }
-        public double TotalKMDriven { get; set; }
         public Location CurrentLocation { get; set; }
         public IEnumerable<Incident> Incidents { get; set; }
         public IEnumerable<Maintenance> Maintenances { get; set; }

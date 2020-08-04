@@ -12,6 +12,5 @@ namespace BusDepotApp.Models
         public int MaintenanceOccuarance { get; set; }
         public int EligibleDistance { get; set; }
         public int EligibleDurationInMonths { get; set; }
-        public DateTime MaintenanceDate { get; set; }
     }
 }
